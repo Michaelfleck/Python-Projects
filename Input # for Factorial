@@ -1,0 +1,16 @@
+def factorial (num):
+    if num>1:
+        return num * factorial(num-1)
+    else:
+        return num
+
+num = input("Enter a number for factorial: ")
+# org = num
+fin = num
+
+# while num > 1:
+#     num = num - 1
+#     fin = fin * num
+fin = factorial(num)
+
+print "The factorial of ", num, "is ", fin
