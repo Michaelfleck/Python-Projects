@@ -1,0 +1,18 @@
+# Create a program that asks the user for their information and then give them
+# their bmi back
+
+
+
+bmi = 0
+
+weight = input("Enter your weight in lbs: ")
+height = input("Enter your height in inches: ")
+
+weight = weight * .45
+height = height * .025
+
+height = height * height
+
+bmi = weight/height
+
+print "Your BMI is: ", bmi
