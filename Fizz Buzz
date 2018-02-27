@@ -1,0 +1,16 @@
+
+print "This program will give the multiples of 3 or 5 or 3 and 5 to 100"
+
+startnum = 0
+endnum = 100
+
+while startnum < endnum:
+    startnum = startnum + 1
+    if startnum%3 == 0 and startnum%5 == 0:
+        print "fizzbuzz"
+    elif startnum%3 == 0 and startnum%5 != 0:
+        print "fizz"
+    elif startnum%3 != 0 and startnum%5 == 0:
+        print "buzz"
+    elif startnum%3 != 0 and startnum%5 != 0:
+        print startnum
