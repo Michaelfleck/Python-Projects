@@ -1,0 +1,17 @@
+import random
+
+flips = 1
+heads = 0
+tails = 0
+
+while flips <= 100:
+    coin = random.randint(1,2)
+    if coin == 1:
+        heads = heads + 1
+        flips = flips + 1
+    if coin == 2:
+        tails = tails + 1
+        flips = flips + 1
+
+if flips > 99:
+    print("You flipped " + str(heads) + "heads, " + " and flipped " + str(tails) + " tails!")
